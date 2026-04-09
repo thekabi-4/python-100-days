@@ -11,11 +11,11 @@
 | 1.2 | Personalized Greeting | easy | 50 | [code](solution_Q_1_2.py) | ✅ |
 | 1.3 | System Status Report | medium | 75 | [code](solution_Q_1_3.py) | ✅ |
 | 1.4 | Log Entry Formatter | medium | 75 | [code](solution_Q_1_4.py) | ✅ |
-| 1.5 | Progress Bar | hard | 100 | [code](solution_Q_1_5.py) | ⬜ |
+| 1.5 | Progress Bar | hard | 100 | [code](solution_Q_1_5.py) | ✅ |
 
 ## Summary
 
-- **Completed:** 4/5
+- **Completed:** 5/5
 - **Category:** I/O Fundamentals
 - **Concepts:** print(), string literals, f-strings, basic formatting
 
