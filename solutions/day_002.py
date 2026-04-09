@@ -1,7 +1,9 @@
-def create_user_profile() -> dict:
-    username = input()
-    age = int(input())
-    is_premium = input().strip().lower() == "true"
-    dic = {"name":username, "age":age,"premium":is_premium, "points":100}
-    print(dic)
-    return dic
+# Get inputs from user
+base_price = float(input())
+tax_rate = float(input())
+print(round(base_price+(base_price*tax_rate),2))
+# Calculate final price
+# Step 1: Use input() to get base_price (float) and tax_rate (float).
+# Step 2: Print base_price + (base_price * tax_rate), rounded to 2 decimals.
+# TODO: Add your solution logic here
+# Remember to print the required output
