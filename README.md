@@ -4,7 +4,7 @@
 
 | Day | Title | Status | Streak |
 |-----|-------|--------|--------|
-| Day 002 | Variables & Data Management | ⏳ 3/5 | 1 🔥 |
+| Day 002 | Variables & Data Management | ⏳ 4/5 | 1 🔥 |
 | Day 001 | System Output & User Messaging | ✅ 5/5 | 0 🔥 |
 
 ---
