@@ -1,13 +1,15 @@
 # Get inputs from user
-value = float(input())
-min_val = float(input())
-max_val = float(input())
-if max_val==min_val:
-    print("50.0")
-else:
-    print(round(((value-min_val)/(max_val-min_val))*100,1))
-# Normalize sensor reading
-# Use input() to get value, min_val, max_val (all float).
-# Print ((value - min_val) / (max_val - min_val)) * 100, rounded to 1 decimal.
-# If max_val == min_val, print 50.0.
+current_stock = int(input())
+purchased = int(input())
+low_stock_threshold = int(input())
+remaining = current_stock - purchased 
+low_stock_alert = remaining <= low_stock_threshold
+a= {'remaining': remaining, 'low_stock_alert': low_stock_alert}
+print(a)
+# Calculate remaining stock
+# Check if low stock alert is needed
+# Print result
+# Use input() to get current_stock (int), purchased (int), low_stock_threshold (int).
+# Print {"remaining": new_stock, "low_stock_alert": bool}.
+# Stock never goes negative. Alert if remaining <= threshold.
 # TODO: Implement the solution based on the instructions above
