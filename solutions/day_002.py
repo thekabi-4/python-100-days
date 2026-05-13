@@ -1,15 +1,18 @@
-# Get inputs from user
-current_stock = int(input())
-purchased = int(input())
-low_stock_threshold = int(input())
-remaining = current_stock - purchased 
-low_stock_alert = remaining <= low_stock_threshold
-a= {'remaining': remaining, 'low_stock_alert': low_stock_alert}
-print(a)
-# Calculate remaining stock
-# Check if low stock alert is needed
-# Print result
-# Use input() to get current_stock (int), purchased (int), low_stock_threshold (int).
-# Print {"remaining": new_stock, "low_stock_alert": bool}.
-# Stock never goes negative. Alert if remaining <= threshold.
-# TODO: Implement the solution based on the instructions above
+def convert_currency(amount: float, from_currency: str, to_currency: str, rates: dict) -> float:
+    # Same currency case
+    if from_currency == to_currency:
+        return round(amount, 2)
+    
+    # Check if both currencies exist in rates
+    if from_currency not in rates or to_currency not in rates:
+        return -1.0
+    
+    # Perform conversion
+    converted = amount * rates[from_currency] / rates[to_currency]
+    return round(converted, 2)
+
+
+# Example test
+rates = {"USD": 1.0, "EUR": 0.85}
+result = convert_currency(100, "USD", "EUR", rates)
+print(result)   # Expected: 117.65
